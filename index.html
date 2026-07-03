@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💒 婚禮邀請函</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="petalsCanvas"></canvas>
+    
+    <div class="container">
+        <!-- 封面部分 -->
+        <section class="cover">
+            <div class="cover-content">
+                <h1 class="title">💒 婚禮邀請</h1>
+                <p class="subtitle">一起見證我們幸福的時刻</p>
+            </div>
+        </section>
+
+        <!-- 主要內容 -->
+        <section class="main-content">
+            <div class="content-wrapper">
+                <!-- 新郎新娘名字 -->
+                <div class="names">
+                    <h2>
+                        <span class="groom">新郎</span>
+                        <span class="separator">&</span>
+                        <span class="bride">新娘</span>
+                    </h2>
+                </div>
+
+                <!-- 邀請文案 -->
+                <div class="invitation-text">
+                    <p>親愛的朋友，</p>
+                    <p>我們很榮幸邀請您參加我們的婚禮，</p>
+                    <p>一起見證我們人生中最重要的時刻。</p>
+                    <p>期待您的蒞臨！</p>
+                </div>
+
+                <!-- 倒數計時 -->
+                <div class="countdown">
+                    <h3>婚禮倒數</h3>
+                    <div class="countdown-timer">
+                        <div class="time-unit">
+                            <span class="number" id="days">0</span>
+                            <span class="label">天</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="number" id="hours">0</span>
+                            <span class="label">小時</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="number" id="minutes">0</span>
+                            <span class="label">分鐘</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="number" id="seconds">0</span>
+                            <span class="label">秒</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 婚禮詳情 -->
+                <div class="details">
+                    <div class="detail-item">
+                        <h4>📅 日期</h4>
+                        <p id="weddingDate">2024年12月25日 (星期三)</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>⏰ 時間</h4>
+                        <p>下午 18:00</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>📍 地點</h4>
+                        <p>台北市中山區<br>幸福婚禮會館</p>
+                    </div>
+                </div>
+
+                <!-- 參加確認 -->
+                <div class="rsvp">
+                    <p>敬請於 <strong>2024年12月15日</strong> 前回覆</p>
+                    <p>📧 Email: wedding@example.com</p>
+                    <p>📱 電話: 0000-000000</p>
+                </div>
+
+                <!-- 祝福留言 -->
+                <div class="footer-message">
+                    <p>💕 感謝您的祝福與陪伴 💕</p>
+                    <p>Made with ❤️ for a special day</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 背景音樂 -->
+    <div class="music-control">
+        <button id="musicToggle" class="music-btn" title="點擊播放/暫停音樂">
+            🎵
+        </button>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="music/wedding.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/petals.js"></script>
+    <script src="js/countdown.js"></script>
+</body>
+</html>
